@@ -27,4 +27,3 @@ for bootstrap in "${bootstraps[@]}"; do
         exit 1
     fi
 done
-

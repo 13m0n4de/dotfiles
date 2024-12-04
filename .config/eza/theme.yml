@@ -1,0 +1,106 @@
+# Modified from https://github.com/eza-community/eza-themes/blob/main/themes/catppuccin.yml
+# Original: Mocha flavor
+# Current: Macchiato flavor
+
+colourful: true
+
+filekinds:
+  normal: {foreground: "#b8c0e0"} # Subtext1
+  directory: {foreground: "#8aadf4"} # Blue
+  symlink: {foreground: "#91d7e3"} # Sky
+  pipe: {foreground: "#8087a2"} # Overlay1
+  block_device: {foreground: "#ee99a0"} # Maroon
+  char_device: {foreground: "#ee99a0"} # Maroon
+  socket: {foreground: "#5b6078"} # Surface2
+  special: {foreground: "#c6a0f6"} # Mauve
+  executable: {foreground: "#a6da95"} # Green
+  mount_point: {foreground: "#7dc4e4"} # Sapphire
+
+perms:
+  user_read: {foreground: "#cad3f5"} # Text
+  user_write: {foreground: "#eed49f"} # Yellow
+  user_execute_file: {foreground: "#a6da95"} # Green
+  user_execute_other: {foreground: "#a6da95"} # Green
+  group_read: {foreground: "#b8c0e0"} # Subtext1
+  group_write: {foreground: "#eed49f"} # Yellow
+  group_execute: {foreground: "#a6da95"} # Green
+  other_read: {foreground: "#a5adcb"} # Subtext0
+  other_write: {foreground: "#eed49f"} # Yellow
+  other_execute: {foreground: "#a6da95"} # Green
+  special_user_file: {foreground: "#c6a0f6"} # Mauve
+  special_other: {foreground: "#5b6078"} # Surface2
+  attribute: {foreground: "#a5adcb"} # Subtext0
+
+size:
+  major: {foreground: "#a5adcb"} # Subtext0
+  minor: {foreground: "#91d7e3"} # Sky
+  number_byte: {foreground: "#cad3f5"} # Text
+  number_kilo: {foreground: "#b8c0e0"} # Subtext1
+  number_mega: {foreground: "#8aadf4"} # Blue
+  number_giga: {foreground: "#c6a0f6"} # Mauve
+  number_huge: {foreground: "#c6a0f6"} # Mauve
+  unit_byte: {foreground: "#a5adcb"} # Subtext0
+  unit_kilo: {foreground: "#8aadf4"} # Blue
+  unit_mega: {foreground: "#c6a0f6"} # Mauve
+  unit_giga: {foreground: "#c6a0f6"} # Mauve
+  unit_huge: {foreground: "#7dc4e4"} # Sapphire
+
+users:
+  user_you: {foreground: "#cad3f5"} # Text
+  user_root: {foreground: "#ed8796"} # Red
+  user_other: {foreground: "#c6a0f6"} # Mauve
+  group_yours: {foreground: "#b8c0e0"} # Subtext1
+  group_other: {foreground: "#8087a2"} # Overlay1
+  group_root: {foreground: "#ed8796"} # Red
+
+links:
+  normal: {foreground: "#91d7e3"} # Sky
+  multi_link_file: {foreground: "#7dc4e4"} # Sapphire
+
+git:
+  new: {foreground: "#a6da95"} # Green
+  modified: {foreground: "#eed49f"} # Yellow
+  deleted: {foreground: "#ed8796"} # Red
+  renamed: {foreground: "#8bd5ca"} # Teal
+  typechange: {foreground: "#f5bde6"} # Pink
+  ignored: {foreground: "#8087a2"} # Overlay1
+  conflicted: {foreground: "#ee99a0"} # Maroon
+
+git_repo:
+  branch_main: {foreground: "#cad3f5"} # Text
+  branch_other: {foreground: "#c6a0f6"} # Mauve
+  git_clean: {foreground: "#a6da95"} # Green
+  git_dirty: {foreground: "#ed8796"} # Red
+
+security_context:
+  colon: {foreground: "#8087a2"} # Overlay1
+  user: {foreground: "#b8c0e0"} # Subtext1
+  role: {foreground: "#c6a0f6"} # Mauve
+  typ: {foreground: "#5b6078"} # Surface2
+  range: {foreground: "#c6a0f6"} # Mauve
+
+file_type:
+  image: {foreground: "#eed49f"} # Yellow
+  video: {foreground: "#ed8796"} # Red
+  music: {foreground: "#a6da95"} # Green
+  lossless: {foreground: "#8bd5ca"} # Teal
+  crypto: {foreground: "#5b6078"} # Surface2
+  document: {foreground: "#cad3f5"} # Text
+  compressed: {foreground: "#f5bde6"} # Pink
+  temp: {foreground: "#ee99a0"} # Maroon
+  compiled: {foreground: "#7dc4e4"} # Sapphire
+  build: {foreground: "#5b6078"} # Surface2
+  source: {foreground: "#8aadf4"} # Blue
+
+punctuation: {foreground: "#8087a2"} # Overlay1
+date: {foreground: "#eed49f"} # Yellow
+inode: {foreground: "#a5adcb"} # Subtext0
+blocks: {foreground: "#939ab7"} # Overlay2
+header: {foreground: "#cad3f5"} # Text
+octal: {foreground: "#8bd5ca"} # Teal
+flags: {foreground: "#c6a0f6"} # Mauve
+
+symlink_path: {foreground: "#91d7e3"} # Sky
+control_char: {foreground: "#7dc4e4"} # Sapphire
+broken_symlink: {foreground: "#ed8796"} # Red
+broken_path_overlay: {foreground: "#5b6078"} # Surface2

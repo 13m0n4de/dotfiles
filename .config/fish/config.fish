@@ -14,8 +14,8 @@ if status is-interactive
 
     # Safe file operations with verbose output
     alias rm="rm -I -v"
-    alias cp="cp -I -v"
-    alias mv="mv -I -v"
+    alias cp="cp -i -v"
+    alias mv="mv -i -v"
 end
 
 # Environment variables

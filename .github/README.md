@@ -21,6 +21,8 @@ My personal dotfiles repository managed with [YADM](https://yadm.io/).
 - **Color Scheme**: [Catppuccin](https://github.com/catppuccin/)
     - Flavor: Macchiato
     - Accent: Teal
+- **Icon Theme**: [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+- **Cursor Theme**: [Catppuccin](https://github.com/catppuccin/cursors/)
 - **Terminal Font**: [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 - **System Font**: [Source Han Sans CN](https://fonts.adobe.com/fonts/source-han-sans-simplified-chinese)
 - **Wallpaper**: Artwork by [shionnn_k](https://x.com/shionnn_k)
@@ -33,10 +35,11 @@ My personal dotfiles repository managed with [YADM](https://yadm.io/).
 - **Status Bar**: [Waybar](https://github.com/Alexays/Waybar/)
 - **Notification Daemon**: [Mako](https://github.com/emersion/mako)
 - **Screen Locker**: [Hyprlock](https://github.com/hyprwm/hyprlock)
+- **System Menu**: [nwg-bar](https://github.com/nwg-piotr/nwg-bar)
 - **Input Method**: [Fcitx5](https://fcitx-im.org/) + [Rime](https://rime.im/) + [雾凇拼音](https://github.com/iDvel/rime-ice)
 - **Wallpaper Manager**: [Hyprpaper](https://github.com/hyprwm/hyprpaper)
 - **Launcher**: [Rofi](https://github.com/davatorium/rofi)
-- **Terminal**: [Alacritty](https://alacritty.org/)
+- **Terminal**: [Alacritty](https://alacritty.org/) + [Zellij](https://github.com/zellij-org/zellij)
 - **Shell**: [Fish](https://fishshell.com/)
 - **Editor**: [Neovim](https://neovim.io/) (configurations in [separate repository](https://github.com/13m0n4de/nvim))
 - **File Manager**: [Yazi](https://github.com/sxyazi/yazi/)

@@ -21,6 +21,8 @@
 - **配色方案**：[Catppuccin](https://github.com/catppuccin/)
     - 风味：Macchiato
     - 强调色：Teal
+- **图标主题**: [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+- **光标主题**: [Catppuccin](https://github.com/catppuccin/cursors/)
 - **终端字体**：[Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 - **系统字体**：[Source Han Sans CN](https://fonts.adobe.com/fonts/source-han-sans-simplified-chinese)
 - **壁纸作者**：[shionnn_k](https://x.com/shionnn_k)
@@ -33,10 +35,11 @@
 - **状态栏**：[Waybar](https://github.com/Alexays/Waybar/)
 - **通知守护程序**：[Mako](https://github.com/emersion/mako)
 - **锁屏程序**：[Hyprlock](https://github.com/hyprwm/hyprlock)
+- **系统菜单**：[nwg-bar](https://github.com/nwg-piotr/nwg-bar)
 - **输入法**：[Fcitx5](https://fcitx-im.org/) + [Rime](https://rime.im/) + [雾凇拼音](https://github.com/iDvel/rime-ice)
 - **壁纸管理器**：[Hyprpaper](https://github.com/hyprwm/hyprpaper)
 - **启动器**：[Rofi](https://github.com/davatorium/rofi)
-- **终端**：[Alacritty](https://alacritty.org/)
+- **终端**: [Alacritty](https://alacritty.org/) + [Zellij](https://github.com/zellij-org/zellij)
 - **Shell**：[Fish](https://fishshell.com/)
 - **编辑器**：[Neovim](https://neovim.io/)（配置在[单独的仓库](https://github.com/13m0n4de/nvim)中）
 - **文件管理器**：[Yazi](https://github.com/sxyazi/yazi/)

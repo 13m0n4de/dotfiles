@@ -149,7 +149,7 @@
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "nwg-bar &",
         "format": "󰐥"
     }
 }

@@ -1,3 +1,5 @@
+# Modified from: https://raw.githubusercontent.com/cardin/starship/refs/heads/mod/docs/public/presets/toml/catppuccin-rainbow.toml
+#
 # Design Philosophy:
 # - Lazy to debug formatting
 # - Lazy to test colors

@@ -40,7 +40,7 @@ My personal dotfiles repository managed with [YADM](https://yadm.io/).
 - **Wallpaper Manager**: [Hyprpaper](https://github.com/hyprwm/hyprpaper)
 - **Launcher**: [Rofi](https://github.com/davatorium/rofi)
 - **Terminal**: [Alacritty](https://alacritty.org/) + [Zellij](https://github.com/zellij-org/zellij)
-- **Shell**: [Fish](https://fishshell.com/)
+- **Shell**: [Fish](https://fishshell.com/) + [Starship](https://starship.rs/)
 - **Editor**: [Neovim](https://neovim.io/) (configurations in [separate repository](https://github.com/13m0n4de/nvim))
 - **File Manager**: [Yazi](https://github.com/sxyazi/yazi/)
 - **System Monitor**: [Btop](https://github.com/aristocratos/btop)

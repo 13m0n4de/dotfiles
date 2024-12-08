@@ -40,7 +40,7 @@
 - **壁纸管理器**：[Hyprpaper](https://github.com/hyprwm/hyprpaper)
 - **启动器**：[Rofi](https://github.com/davatorium/rofi)
 - **终端**: [Alacritty](https://alacritty.org/) + [Zellij](https://github.com/zellij-org/zellij)
-- **Shell**：[Fish](https://fishshell.com/)
+- **Shell**：[Fish](https://fishshell.com/) + [Starship](https://starship.rs/)
 - **编辑器**：[Neovim](https://neovim.io/)（配置在[单独的仓库](https://github.com/13m0n4de/nvim)中）
 - **文件管理器**：[Yazi](https://github.com/sxyazi/yazi/)
 - **系统监视器**：[Btop](https://github.com/aristocratos/btop)

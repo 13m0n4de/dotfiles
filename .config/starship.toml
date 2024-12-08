@@ -1,0 +1,224 @@
+# Design Philosophy:
+# - Lazy to debug formatting
+# - Lazy to test colors
+# - Easier to just use an existing color scheme and design
+#
+# Catppuccin Color:
+# - text : whitest white text
+# - surface0 : blackest black surface
+# - crust : blackest black test
+# 
+# To install:
+# wget https://raw.githubusercontent.com/cardin/starship/refs/heads/mod/docs/public/presets/toml/catppuccin-rainbow.toml -O $STARSHIP_CONFIG
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](color_surface0)\
+$os\
+[](fg:prev_fg bg:color_maroon)\
+$username\
+$hostname\
+[](fg:prev_bg bg:color_yellow)\
+$directory\
+[](fg:prev_bg bg:color_teal)\
+$git_branch\
+$git_commit\
+$git_status\
+[](fg:prev_bg bg:color_blue)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:prev_bg bg:color_mauve)\
+$docker_context\
+$conda\
+$jobs\
+[](fg:prev_bg bg:color_surface0)\
+$time\
+$cmd_duration\
+$memory_usage\
+[ ](fg:prev_bg)\
+$line_break$character"""
+
+add_newline = false
+
+palette = 'catppuccin_macchiato'
+
+[palettes.catppuccin_macchiato]
+color_rosewater = "#f4dbd6"
+color_flamingo = "#f0c6c6"
+color_pink = "#f5bde6"
+color_mauve = "#c6a0f6"
+color_red = "#ed8796"
+color_maroon = "#ee99a0"
+color_peach = "#f5a97f"
+color_yellow = "#eed49f"
+color_green = "#a6da95"
+color_teal = "#8bd5ca"
+color_sky = "#91d7e3"
+color_sapphire = "#7dc4e4"
+color_blue = "#8aadf4"
+color_lavender = "#b7bdf8"
+color_text = "#cad3f5"
+color_subtext1 = "#b8c0e0"
+color_subtext0 = "#a5adcb"
+color_overlay2 = "#939ab7"
+color_overlay1 = "#8087a2"
+color_overlay0 = "#6e738d"
+color_surface2 = "#5b6078"
+color_surface1 = "#494d64"
+color_surface0 = "#363a4f"
+color_base = "#24273a"
+color_mantle = "#1e2030"
+color_crust = "#181926"
+
+[os]
+disabled = false
+style = "bg:prev_bg fg:prev_bg"
+format = "[$symbol ]($style)"
+
+[os.symbols]
+Windows = "[](fg:color_blue bg:prev_fg)"
+Ubuntu = "[](fg:color_peach bg:prev_fg)"
+SUSE = "[](fg:color_green bg:prev_fg)"
+Raspbian = "[󰐿](fg:color_red bg:prev_fg)"
+Mint = "[󰣭](fg:color_green bg:prev_fg)"
+Macos = "[󰀵](fg:color_text bg:prev_fg)"
+Manjaro = "[](fg:color_green bg:prev_fg)"
+Linux = "[󰌽](fg:color_text bg:prev_fg)"
+Gentoo = "[󰣨](fg:color_text bg:prev_fg)"
+Fedora = "[󰣛](fg:color_red bg:prev_fg)"
+Alpine = "[](fg:color_teal bg:prev_fg)"
+Amazon = "[](fg:color_peach bg:prev_fg)"
+Android = "[](fg:color_green bg:prev_fg)"
+Arch = "[󰣇](fg:color_blue bg:prev_fg)"
+Artix = "[󰣇](fg:color_blue bg:prev_fg)"
+EndeavourOS = "[](fg:color_purple bg:prev_fg)"
+CentOS = "[](fg:color_blue bg:prev_fg)"
+Debian = "[󰣚](fg:color_red bg:prev_fg)"
+Redhat = "[󱄛](fg:color_red bg:prev_fg)"
+RedHatEnterprise = "[󱄛](fg:color_red bg:prev_fg)"
+Pop = "[](fg:color_teal bg:prev_fg)"
+
+[username]
+# by default only shows on SSH
+style_user = "bg:prev_bg fg:color_crust"
+style_root = "bg:prev_bg fg:color_crust"
+format = '[  $user ]($style)'
+
+[hostname]
+# by default only shows on SSH
+ssh_symbol = ""
+style = "fg:prev_fg bg:prev_bg"
+format = "[$ssh_symbol $hostname ]($style)"
+
+[directory]
+style = "bg:prev_bg fg:color_crust"
+read_only_style = "fg:color_red bg:prev_bg"
+format = "[ $path ]($style)[$read_only]($read_only_style)"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = "󰌾 "
+
+[git_branch]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"
+format = '[ $symbol $branch ]($style)'
+
+[git_commit]
+style = "fg:prev_fg bg:prev_bg"
+format = "[($tag)]($style) "
+
+[git_status]
+style = "fg:color_crust bg:prev_bg"              # fg redefined, as prev module may not exist
+format = '[($all_status$ahead_behind )]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"
+format = '[ $symbol( $version) ](fg:color_crust bg:prev_bg)' # bug, must set explicitly
+
+[c]
+symbol = " "
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[rust]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[golang]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[php]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[java]
+symbol = ""
+style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
+
+[kotlin]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[haskell]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[python]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"                     # fg redefined, as prev module may not exist
+format = '[ $symbol( $version)( $virtualenv) ]($style)'
+
+[docker_context]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"       # fg redefined, as prev module may not exist
+format = '[ $symbol( $context) ]($style)'
+
+[conda]
+symbol = ""
+style = "fg:color_crust bg:prev_bg"           # fg redefined, as prev module may not exist
+format = '[ $symbol( $environment) ]($style)'
+
+[jobs]
+symbol = "󰆅"
+style = "fg:color_crust bg:prev_bg"      # fg redefined, as prev module may not exist
+format = "[ $symbol( $number) ]($style)"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:color_text bg:prev_bg"
+format = '[  $time ]($style)'
+
+[cmd_duration]
+style = "fg:prev_fg bg:prev_bg"
+format = "[ $duration ]($style)"
+
+[memory_usage]
+symbol = "󰍛"
+style = "fg:bold color_red bg:prev_bg"
+format = "[$symbol ${ram}]($style) "
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:color_green)'
+error_symbol = '[](bold fg:color_red)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+vimcmd_replace_symbol = '[](bold fg:color_purple)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'

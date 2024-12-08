@@ -21,5 +21,5 @@ end
 # Environment variables
 set -gx EDITOR nvim
 
-# starship init fish | source
+starship init fish | source
 zoxide init fish | source

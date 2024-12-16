@@ -24,7 +24,7 @@
 - **图标主题**: [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - **光标主题**: [Catppuccin](https://github.com/catppuccin/cursors/)
 - **终端字体**：[Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
-- **系统字体**：[Source Han Sans CN](https://fonts.adobe.com/fonts/source-han-sans-simplified-chinese)
+- **系统字体**：[Source Han Sans](https://github.com/adobe-fonts/source-han-sans)
 - **壁纸作者**：[shionnn_k](https://x.com/shionnn_k)
 
 ## 💻 系统信息

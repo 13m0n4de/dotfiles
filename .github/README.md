@@ -24,7 +24,7 @@ My personal dotfiles repository managed with [YADM](https://yadm.io/).
 - **Icon Theme**: [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 - **Cursor Theme**: [Catppuccin](https://github.com/catppuccin/cursors/)
 - **Terminal Font**: [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
-- **System Font**: [Source Han Sans CN](https://fonts.adobe.com/fonts/source-han-sans-simplified-chinese)
+- **System Font**: [Source Han Sans](https://github.com/adobe-fonts/source-han-sans)
 - **Wallpaper**: Artwork by [shionnn_k](https://x.com/shionnn_k)
 
 ## 💻 System Information

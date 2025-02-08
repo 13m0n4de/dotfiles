@@ -44,7 +44,7 @@
 - **编辑器**：[Neovim](https://neovim.io/)（配置在[单独的仓库](https://github.com/13m0n4de/nvim)中）
 - **文件管理器**：[Yazi](https://github.com/sxyazi/yazi/)
 - **系统监视器**：[Btop](https://github.com/aristocratos/btop)
-- **截图工具**：[grim](https://git.sr.ht/~emersion/grim) + [slurp](https://github.com/emersion/slurp) + [satty](https://github.com/gabm/satty)
+- **截图工具**：[grimblast](https://github.com/hyprwm/contrib/tree/main/grimblast) ([grim](https://git.sr.ht/~emersion/grim) + [slurp](https://github.com/emersion/slurp)) + [satty](https://github.com/gabm/satty)
 - **录屏工具**：[OBS](https://obsproject.com/)
 - **配置管理器**：[YADM](https://yadm.io/)
 

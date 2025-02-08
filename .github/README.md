@@ -44,7 +44,7 @@ My personal dotfiles repository managed with [YADM](https://yadm.io/).
 - **Editor**: [Neovim](https://neovim.io/) (configurations in [separate repository](https://github.com/13m0n4de/nvim))
 - **File Manager**: [Yazi](https://github.com/sxyazi/yazi/)
 - **System Monitor**: [Btop](https://github.com/aristocratos/btop)
-- **Screenshot**: [grim](https://git.sr.ht/~emersion/grim) + [slurp](https://github.com/emersion/slurp) + [satty](https://github.com/gabm/satty)
+- **Screenshot**: [grimblast](https://github.com/hyprwm/contrib/tree/main/grimblast) ([grim](https://git.sr.ht/~emersion/grim) + [slurp](https://github.com/emersion/slurp)) + [satty](https://github.com/gabm/satty)
 - **Screen Recording**: [OBS](https://obsproject.com/)
 - **Dotfiles Manager**: [YADM](https://yadm.io/)
 

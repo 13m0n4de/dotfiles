@@ -16,6 +16,9 @@ if status is-interactive
     alias rm="rm -I -v"
     alias cp="cp -i -v"
     alias mv="mv -i -v"
+
+    abbr urldecode "string unescape --style=url"
+    abbr urlencode "string escape --style=url"
 end
 
 # Environment variables

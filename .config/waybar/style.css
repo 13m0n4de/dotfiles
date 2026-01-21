@@ -12,6 +12,7 @@
 
 #memory,
 #cpu,
+#mpd,
 #custom-music,
 #network,
 #pulseaudio,
@@ -66,9 +67,12 @@
     margin-right: 1rem;
 }
 
-#custom-music {
+#custom-music,
+#mpd {
     color: @peach;
     border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #pulseaudio {

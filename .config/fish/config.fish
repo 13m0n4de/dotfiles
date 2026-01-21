@@ -13,7 +13,7 @@ if status is-interactive
     alias lg="eza --icons --git --git-repos --long --header"
 
     # Safe file operations with verbose output
-    alias rm="rm -I -v"
+    alias rm="rm -i -v"
     alias cp="cp -i -v"
     alias mv="mv -i -v"
 
@@ -26,3 +26,4 @@ set -gx EDITOR nvim
 
 starship init fish | source
 zoxide init fish | source
+fish_config theme choose "Catppuccin Macchiato"

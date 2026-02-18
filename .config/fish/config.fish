@@ -26,4 +26,4 @@ set -gx EDITOR nvim
 
 starship init fish | source
 zoxide init fish | source
-fish_config theme choose "Catppuccin Macchiato"
+fish_config theme choose "Catppuccin Macchiato" --color-theme=dark

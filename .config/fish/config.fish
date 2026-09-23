@@ -5,7 +5,7 @@ if status is-interactive
     alias pyc="proxychains4 -q"
 
     # Replace ls commands with eza
-    alias ls="eza --icons"
+    alias ls="eza --icons auto"
     alias ll="eza --icons --long --git"
     alias la="eza --icons --long --git --all"
     alias lt="eza --icons --tree"

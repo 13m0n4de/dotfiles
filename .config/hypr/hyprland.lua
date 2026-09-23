@@ -4,8 +4,8 @@ local C = require("macchiato")
 -- Programs
 --------------------
 
-local terminal = "foot"
-local fileManager = "foot yazi"
+local terminal = "kitty"
+local emacs = "emacs"
 local menu = "rofi -show drun"
 local mainMod = "ALT"
 
@@ -14,7 +14,7 @@ local mainMod = "ALT"
 --------------------
 
 hl.monitor({ output = "eDP-1", mode = "preferred", position = "0x0", scale = 1 })
-hl.monitor({ output = "DP-3", mode = "3840x2160@160", position = "auto", scale = 1 })
+hl.monitor({ output = "DP-3", mode = "3840x2160@160", position = "2560x0", scale = 1 })
 
 --------------------
 -- Autostart
@@ -40,6 +40,7 @@ hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1")
 hl.env("GBM_BACKEND", "nvidia-drm")
 hl.env("LIBVA_DRIVER_NAME", "nvidia")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("QT_IM_MODULE", "fcitx")
 
 --------------------
 -- Look and Feel
@@ -150,12 +151,31 @@ hl.device({
 })
 
 --------------------
+-- Workspace Rules
+--------------------
+
+-- eDP-1
+hl.workspace_rule({ workspace = "1", monitor = "eDP-1", default = true })
+hl.workspace_rule({ workspace = "3", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "5", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "7", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "9", monitor = "eDP-1" })
+
+-- DP-3
+hl.workspace_rule({ workspace = "2", monitor = "DP-3", default = true })
+hl.workspace_rule({ workspace = "4", monitor = "DP-3" })
+hl.workspace_rule({ workspace = "6", monitor = "DP-3" })
+hl.workspace_rule({ workspace = "8", monitor = "DP-3" })
+hl.workspace_rule({ workspace = "10", monitor = "DP-3" })
+
+--------------------
 -- Keybindings
 --------------------
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(emacs))
+hl.bind(mainMod .. " + Y", hl.dsp.exec_cmd("kitty yazi"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float())
 hl.bind(mainMod .. " + T", hl.dsp.window.pin())
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
@@ -274,4 +294,13 @@ hl.window_rule({ match = { class = ".*" }, suppress_event = "maximize" })
 hl.window_rule({
 	match = { class = "^$", title = "^$", xwayland = true, float = true, fullscreen = false, pin = false },
 	no_focus = true,
+})
+
+hl.window_rule({
+	name = "feishu-popup-no-focus",
+	match = {
+		title = "^飞书会议$",
+		initial_class = "^$",
+	},
+	no_initial_focus = true,
 })
